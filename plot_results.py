@@ -1,11 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Загрузка данных
 df = pd.read_csv('results.csv')
 
-# --- Параметры фильтрации ---
-# Выберите нужные алгоритмы и типы массивов для отображения
 algorithms = [
     "Standard Quicksort",
     "Standard Mergesort",
@@ -16,7 +13,6 @@ algorithms = [
 ]
 array_types = ["random", "reverse sorted", "almost sorted"]
 
-# --- Построение графиков ---
 for algo in algorithms:
     plt.figure(figsize=(10, 6))
     for array_type in array_types:
